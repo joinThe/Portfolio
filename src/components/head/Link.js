@@ -1,16 +1,31 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
-function LinkButton(props){
-    // todo  buutton choice 
-    // let teg="a"
-    //  if(!props.link){
-// teg="button"
-        // }
 
-    return(
-        // temp span instad of a
-          <span className="link-and-button" href="#">{props.name}</span>
-         );
+class Link extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <NavLink className="link-and-button" to={this.props.url}>{this.props.name}</NavLink>
+        );
+    }
 }
 
-export default LinkButton;
+export default Link;
+
+// function LinkButton(props) {
+//
+//
+//     return (
+//         <NavLink className="link-and-button" to={props.url}>{props.name}</NavLink>
+//     );
+//
+//
+//
+// }
+//
+// export default LinkButton;

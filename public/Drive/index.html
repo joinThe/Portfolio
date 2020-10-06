@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html
+        lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drive</title>
+    <!--    style reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+          integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg=="
+          crossorigin="anonymous"/>
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Mulish:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
+    <!--    self style-->
+    <link rel="stylesheet" href="res/style/sass/main_style.css">
+    <!--icon-->
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+</head>
+<body>
+
+<div class="main-container">
+
+    <aside class="main-site-bar">
+        <div class="container">
+
+            <div class="logo">
+                <img class="logo__image" src="icon.svg" alt="logo_picture">
+                <span class="logo__text">Drive.</span>
+            </div>
+            <nav>
+                <ul class="main-navigation">
+                    <li class="main-navigation__item">
+
+                        <button class="more-functions-buttons more-functions-buttons--active">
+                            <i class="fas fa-cloud"></i>
+                            My Drive
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-share-square"></i>
+                            Shared Files
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-folder-plus"></i>
+                            File Requests
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-star"></i>
+                            Starred
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-trash-alt"></i>
+                            Trash
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-align-left"></i>
+                            Statistics
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+                        <button class="more-functions-buttons">
+                            <i class="far fa-calendar-alt"></i>
+                            Task
+                        </button>
+                    </li>
+                    <li class="main-navigation__item">
+
+                        <button class="more-functions-buttons">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </button>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="storage-indicator">
+                <div class="storage-indicator__title">
+                    <span><i class="fas fa-cloud storage-icon"></i>Storage</span>
+                    <span>73%</span>
+                </div>
+                <div class="storage-indicator__graphic">
+                    <div class="storage-indicator__graphic-inner percent-width--27"></div>
+                </div>
+                <p class="storage-indicator__text">27/100 GB Used</p>
+            </div>
+
+        </div>
+
+
+    </aside>
+
+    <main class="content">
+
+        <div class="container">
+
+            <section class="search">
+                <label class="search__label" for="search"><i class="fas fa-search"></i></label>
+                <input id="search" class="search__field" placeholder="Search" type="text">
+            </section>
+
+            <section class="dashboard">
+                <div class="content-sections__header">
+                    <h2 class="section-title">Dashboard</h2>
+                    <div class="content-sections__additional">
+
+                        <button class="more-functions-buttons">
+                            <!--                            <i class="fas fa-bars"></i>-->
+                            <img src="res/img/menu-button.svg" alt="=">
+                        </button>
+                        <button class="more-functions-buttons">
+                            <img src="res/img/menu-button-1.svg" alt="=">
+
+                        </button>
+                        <button class="common-button icon-button">
+                            Upload File <i class="fas fa-cloud-download-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="content-sections__inner">
+
+                    <div class="content-sections__inner-text">
+                        <h3 class="inner-title">
+                            Welcome Back Jannie
+                        </h3>
+                        <p class="inner-text">
+                            Get additional 500 GB space for your documents and files. Unlock now for more space.
+                        </p>
+
+                        <button class="common-button">
+                            Upgrade
+                        </button>
+
+                    </div>
+
+                    <img src="res/img/dashboard-inner-img.svg" alt="person">
+
+
+                </div>
+
+            </section>
+
+            <section class="folders">
+                <div class="content-sections__header">
+                    <h2 class="section-title">Folders</h2>
+
+                    <button class="view-button">View All <i class="fas fa-angle-right"></i></button>
+                </div>
+
+                <div class="folders-cards">
+
+                    <div class="folders__card-item red-folders__card-item">
+                        <div class="card-item__options">
+                            <button class="common-button ">
+                                <i class="fas fa-folder-open"></i>
+                            </button>
+
+                            <button class="common-button more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                        <h3 class="card-item__title">
+                            Design Shift
+                        </h3>
+                        <div class="card-item__access-for">
+                            <ul>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item-1.jpg" alt="photo">
+                                </li>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item.jpg" alt="photo">
+                                </li>
+                                <li class="access-item">
+                                    <p>+4</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <p class="card-item__property">
+                            <i class="far fa-folder"></i>
+                            10 Files
+                        </p>
+
+                        <p class="card-item__info">
+                            <i class="far fa-clock"></i>
+                            Created on Dec 13, 2019
+                        </p>
+
+                        <!--                    card-item__-->
+                    </div>
+                    <div class="folders__card-item blue-folders__card-item">
+                        <div class="card-item__options">
+                            <button class="common-button ">
+                                <i class="fas fa-folder-open"></i>
+                            </button>
+
+                            <button class="common-button more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                        <h3 class="card-item__title">
+                            Health Care App
+                        </h3>
+                        <div class="card-item__access-for">
+                            <ul>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item-2.jpg" alt="photo">
+                                </li>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item-3.jpg" alt="photo">
+                                </li>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item-4.jpg" alt="photo">
+                                </li>
+                                <li class="access-item">
+                                    <p>+2</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <p class="card-item__property">
+                            <i class="far fa-folder"></i>
+                            12 Files
+                        </p>
+
+                        <p class="card-item__info">
+                            <i class="far fa-clock"></i>
+                            Created on Nov 04, 2019
+                        </p>
+
+                        <!--                    card-item__-->
+                    </div>
+                    <div class="folders__card-item yellow-folders__card-item">
+                        <div class="card-item__options">
+                            <button class="common-button ">
+                                <i class="fas fa-folder-open"></i>
+                            </button>
+
+                            <button class="common-button more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                        <h3 class="card-item__title">
+                            Food truck Website
+                        </h3>
+                        <div class="card-item__access-for">
+                            <ul>
+                                <li class="access-item">
+                                    <img src="res/img/folder-access__item-5.jpg" alt="photo">
+                                </li>
+                                <li class="access-item ">
+                                    <img src="res/img/folder-access__item-1.jpg" alt="photo">
+                                </li>
+                                <li class="access-item ">
+                                    <p>+4</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <p class="card-item__property">
+                            <i class="far fa-folder"></i>
+                            16 Files
+                        </p>
+
+                        <p class="card-item__info">
+                            <i class="far fa-clock"></i>
+                            Created on Nov 03, 2019
+                        </p>
+
+                        <!--                    card-item__-->
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="recent-files">
+                <div class="content-sections__header">
+
+                    <h2 class="section-title">Recent Files</h2>
+                    <button class="view-button">View All <i class="fas fa-angle-right"></i></button>
+                </div>
+
+                <div class="recent-file__cards">
+
+                    <div class="file-card__item pdf-file-card">
+                        <span class="file-type">pdf</span>
+                        <span class="file-name">Design Thinking Process</span>
+                        <span class="file-access">Only You</span>
+                        <span class="file-date">Dec 13,2019</span>
+                        <span class="file-size">2 mb                        </span>
+                        <div class="file-buttons">
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-reply"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="file-card__item png-file-card">
+
+                        <span class="file-type">png</span>
+
+                        <span class="file-name">Design Thinking Process</span>
+
+
+                        <span class="file-access">10 Members</span>
+                        <span class="file-date">Nov 04, 2019</span>
+                        <span class="file-size">10 MB</span>
+
+                        <div class="file-buttons">
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-reply"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="file-card__item zip-file-card">
+                        <span class="file-type">zip</span>
+                        <span class="file-name">Characters Animation</span>
+                        <span class="file-access">15 Members</span>
+                        <span class="file-date">Nov 01, 2019</span>
+                        <span class="file-size">50 MB</span>
+
+                        <div class="file-buttons">
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-reply"></i>
+                            </button>
+                            <button class="more-functions-buttons">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <aside class="info-site-bar">
+        <div class="container">
+            <div class="account-navigation">
+                <button class="account-navigation__item more-functions-buttons">
+                    <img class="photo" src="res/img/account-photo.jpg" alt="your photo">
+                    <span class="name">Jannie</span>
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <button class="account-navigation__item bell more-functions-buttons"><i class="far fa-bell"></i></button>
+                <button class="account-navigation__item more-functions-buttons"><i class="fas fa-cog"></i></button>
+                <button class="account-navigation__item more-functions-buttons"><i class="far fa-question-circle"></i>
+                </button>
+            </div>
+
+            <article class="calendar">
+                <div class="content-sections__header">
+                    <h2 class="section-title">Calendar</h2>
+                    <button class="more-functions-buttons"><i class="fas fa-angle-up"></i></button>
+
+                </div>
+                <div class="calendar__check-box">
+                    <input class="check-box__item" type="radio" id="calendar-until-week" name="calendar-until-select"
+                           value="week">
+                    <label class="check-box__label" for="calendar-until-week">Week</label>
+                    <input class="check-box__item" type="radio" id="calendar-until-month" name="calendar-until-select"
+                           checked value="month">
+                    <label class="check-box__label" for="calendar-until-month">Month</label>
+                    <input class="check-box__item" type="radio" id="calendar-until-year" name="calendar-until-select"
+                           value="year">
+                    <label class="check-box__label" for="calendar-until-year">Year</label>
+
+                </div>
+                <div class="calendar__time-select">
+                    <button class="account-navigation__item more-functions-buttons">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <span>
+                        December 2019
+                    </span>
+                    <button class="account-navigation__item more-functions-buttons">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="calendar__body">
+
+                    <div class="calendar-column"><span>Mon</span></div>
+                    <div class="calendar-column"><span>Tue</span></div>
+                    <div class="calendar-column"><span>Wed</span></div>
+                    <div class="calendar-column"><span>Thu</span></div>
+                    <div class="calendar-column"><span>Fri</span></div>
+                    <div class="calendar-column"><span>Sat</span></div>
+                    <div class="calendar-column"><span>Sun</span></div>
+
+                    <div class="calendar-row-item calendar-row-item--past"><span>27</span></div>
+                    <div class="calendar-row-item calendar-row-item--past"><span>28</span></div>
+                    <div class="calendar-row-item calendar-row-item--past"><span>29</span></div>
+                    <div class="calendar-row-item calendar-row-item--past"><span>30</span></div>
+
+                    <div class="calendar-row-item"><span>1</span></div>
+                    <div class="calendar-row-item"><span>2</span></div>
+                    <div class="calendar-row-item"><span>3</span></div>
+                    <div class="calendar-row-item"><span>4</span></div>
+                    <div class="calendar-row-item"><span>5</span></div>
+                    <div class="calendar-row-item"><span>6</span></div>
+                    <div class="calendar-row-item calendar-row-item--notification-red calendar-row-item--today calendar-row-item--select">
+                        <span>7</span></div>
+                    <div class="calendar-row-item"><span>8</span></div>
+                    <div class="calendar-row-item calendar-row-item--notification-red"><span>9</span></div>
+                    <div class="calendar-row-item"><span>10</span></div>
+                    <div class="calendar-row-item"><span>11</span></div>
+                    <div class="calendar-row-item"><span>12</span></div>
+                    <div class="calendar-row-item"><span>13</span></div>
+                    <div class="calendar-row-item"><span>14</span></div>
+                    <div class="calendar-row-item"><span>15</span></div>
+                    <div class="calendar-row-item"><span>16</span></div>
+                    <div class="calendar-row-item"><span>17</span></div>
+                    <div class="calendar-row-item"><span>18</span></div>
+                    <div class="calendar-row-item"><span>19</span></div>
+                    <div class="calendar-row-item calendar-row-item--notification-yellow"><span>20</span></div>
+                    <div class="calendar-row-item"><span>21</span></div>
+                    <div class="calendar-row-item"><span>22</span></div>
+                    <div class="calendar-row-item"><span>23</span></div>
+                    <div class="calendar-row-item calendar-row-item--notification-blue"><span>24</span></div>
+                    <div class="calendar-row-item"><span>25</span></div>
+                    <div class="calendar-row-item"><span>26</span></div>
+                    <div class="calendar-row-item"><span>27</span></div>
+                    <div class="calendar-row-item"><span>28</span></div>
+                    <div class="calendar-row-item"><span>29</span></div>
+                    <div class="calendar-row-item"><span>30</span></div>
+                    <div class="calendar-row-item"><span>31</span></div>
+                </div>
+            </article>
+
+            <section class="tasks">
+                <div class="content-sections__header">
+                    <h2 class="section-title">Your Task</h2>
+                    <button class="view-button">View All <i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="tasks__cards">
+                    <div class="cards-item">
+                        <div class="card-indicator">
+
+                        </div>
+
+
+                        <div class="content-sections__header">
+                            <h3 class="title">Review health care app with team</h3>
+                            <button class="more-functions-buttons"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+
+                        <div class="task-body">
+                            <p class="task-time"><i class="far time-icon fa-clock"></i>7 Dec, 2019 | 10:00 AM</p>
+                            <div class="card-item__access-for">
+                                <ul>
+                                    <li class="access-item">
+                                        <img src="res/img/folder-access__item.jpg" alt="photo">
+                                    </li>
+                                    <li class="access-item">
+                                        <img src="res/img/folder-access__item-1.jpg" alt="photo">
+                                    </li>
+                                    <li class="access-item">
+                                        <p>+</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="storage-schedule">
+                <div class="content-sections__header">
+                    <h2 class="section-title">Storage</h2>
+                    <button class="view-button">View All <i class="fas fa-angle-right"></i></button>
+                </div>
+
+                <div class="schedule">
+                    <div class="schedule__header">
+                        <div class="content-sections__header">
+                            <h3 class="title">
+                                Available Space <span>73 GB</span>
+                            </h3>
+                            <div class="select-container">
+                                <i class="fas fa-calendar-alt icon"></i>
+                                <select class="range-select " id="schedule-time-range-select">
+                                    <option>Week</option>
+                                    <option selected>Month</option>
+                                    <option>Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__body">
+                        <div class="percent-column-item"><span>100</span>
+                            <div class="percent-line"></div>
+                        </div>
+                        <div class="percent-column-item"><span>80</span>
+                            <div class="percent-line"></div>
+
+                        </div>
+                        <div class="percent-column-item"><span>60</span>
+                            <div class="percent-line"></div>
+
+                        </div>
+                        <div class="percent-column-item"><span>40</span>
+                            <div class="percent-line"></div>
+
+                        </div>
+                        <div class="percent-column-item"><span>20</span>
+                            <div class="percent-line"></div>
+
+                        </div>
+
+                        <div class="time-column-item"><span> </span></div>
+                        <div class="time-column-item">
+                            <span>Jan</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--30"></div>
+                                <div  class="schedule-column__received percent-height--20"></div>
+                                <div  class="schedule-column__space percent-height--40"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>Feb</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--40"></div>
+                                <div  class="schedule-column__received percent-height--25"></div>
+                                <div  class="schedule-column__space percent-height--30"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>Mar</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--50"></div>
+                                <div  class="schedule-column__received percent-height--30"></div>
+                                <div  class="schedule-column__space percent-height--20"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>Apr</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--60"></div>
+                                <div  class="schedule-column__received percent-height--35"></div>
+                                <div  class="schedule-column__space percent-height--10"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>May</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--60"></div>
+                                <div  class="schedule-column__received percent-height--35"></div>
+                                <div  class="schedule-column__space percent-height--10"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>Jun</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--50"></div>
+                                <div  class="schedule-column__received percent-height--30"></div>
+                                <div  class="schedule-column__space percent-height--20"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>jul</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--40"></div>
+                                <div  class="schedule-column__received percent-height--25"></div>
+                                <div  class="schedule-column__space percent-height--30"></div>
+                            </div>
+                        </div>
+                        <div class="time-column-item">
+                            <span>Aug</span>
+                            <div class="schedule-column">
+                                <div  class="schedule-column__uploads percent-height--30"></div>
+                                <div  class="schedule-column__received percent-height--20" ></div>
+                                <div  class="schedule-column__space percent-height--40"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__footer">
+                        <div class="footer-item">
+                            <div class="two-circle red-border">
+                                <div class="second-circle red-bg"></div>
+                            </div>
+                            <span>Uploads</span>
+                        </div>
+
+                        <div class="footer-item">
+                            <div class="two-circle yellow-border">
+                                <div class="second-circle yellow-bg"></div>
+                            </div>
+                            <span>Files Received</span>
+                        </div>
+
+                        <div class="footer-item">
+                            <div class="two-circle blue-border">
+                                <div class="second-circle blue-bg"></div>
+                            </div>
+                            <span>Space Left</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </aside>
+
+
+</div>
+</body>
+</html>
