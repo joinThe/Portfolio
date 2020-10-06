@@ -1,0 +1,73 @@
+.container {
+  margin: 0 auto;
+}
+@media (max-width: 2000px) {
+  .container {
+    padding: 0 120px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+.flex-center, .link-and-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.link-and-button {
+  padding: 5px 10px;
+  background: #1D7074;
+  border-radius: 5px;
+  color: white;
+}
+.link-and-button--active {
+  color: #FFB473;
+}
+
+.header {
+  background: lightgray;
+  padding: 10px 0;
+  box-shadow: 0 5px 5px gray;
+}
+.header .nav-bar .list {
+  display: flex;
+}
+.header .nav-bar .list li {
+  margin: 5px 15px;
+}
+
+.content-inner {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.my-works {
+  margin: 0 -20px;
+  padding: 20px;
+}
+.my-works .title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.my-works__card {
+  margin: 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.my-works__card .card-img {
+  height: 300px;
+}
+
+.App {
+  text-align: center;
+}
