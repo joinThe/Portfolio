@@ -9,6 +9,8 @@ class FontIcon extends React.Component {
         iconMap.set("desktop", "fas fa-tv");
         iconMap.set("css", "fab fa-css3-alt");
         iconMap.set("scss","fab fa-sass")
+        iconMap.set("telegram","fab fa-telegram")
+        iconMap.set("viber","fab fa-viber")
         this.state = {iconMap};
     }
 

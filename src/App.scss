@@ -131,6 +131,7 @@ html {
 
     .card-img {
       transition: filter .6s;
+
     }
 
     .description {
@@ -202,3 +203,75 @@ html {
   //text-align: center;
 }
 
+
+
+//for CV
+
+.main-container{
+  font-family: sans-serif;
+  padding-bottom: 30px;
+font-size: 1.5rem;
+
+  i {
+    color: #4D4D4D;
+    margin: 0 10px;
+  }
+
+  ul {
+    margin-left: 50px;
+  }
+
+  .title {
+    margin: 30px 40px 10px;
+    font-size: 1.9rem;
+  }
+
+  .subtitle {
+    margin: 0 55px 10px;
+    font-size: 1.7rem;
+  }
+
+  .name {
+    text-align: center;
+
+    margin-bottom: 30px;
+    font-size: 2.7rem;
+  }
+
+  .information {
+    padding: 20px 0;
+    box-shadow: 0 5px 5px -4px #121432;
+    background-color: rgba(186, 186, 186, .2);
+  }
+
+  .phones {
+    display: flex;
+  }
+
+  .phone {
+    margin-left: 5px;
+  }
+
+  .phone:last-child {
+    margin-bottom: 0;
+  }
+
+  .phone:nth-child(1) {
+    /*margin: 0 0 10px;*/
+    margin-top: 0;
+    /*background-color: #F8B849;*/
+  }
+
+  .position {
+    margin-left: 40px;
+    font-size: 110%;
+  }
+
+  .position span {
+    font-weight: 600;
+  }
+
+  .self-text {
+    margin-left: 70px;
+  }
+}

@@ -8,12 +8,10 @@ function Main() {
     return (
 
         <main>
-            <div class="container">
-                <Route path={'/works'} component={Works}/>
-                <Route path={'/contact'} component={Contact}/>
-                <Route path={'/cv'} component={Cv}/>
-                {/*<Works/>*/}
-            </div>
+                <Route path={'/works'} render={()=><Works/>}/>
+                <Route path={'/contact'} render={()=><Contact/>} />
+                <Route path={'/cv'} render={()=><Cv/>}/>
+
         </main>
     );
 }

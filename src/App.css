@@ -161,5 +161,59 @@ html {
   color: white;
   text-shadow: #424242 1px 1px;
 }
+.main-container {
+  font-family: sans-serif;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}
+.main-container i {
+  color: #4D4D4D;
+  margin: 0 10px;
+}
+.main-container ul {
+  margin-left: 50px;
+}
+.main-container .title {
+  margin: 30px 40px 10px;
+  font-size: 1.9rem;
+}
+.main-container .subtitle {
+  margin: 0 55px 10px;
+  font-size: 1.7rem;
+}
+.main-container .name {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.7rem;
+}
+.main-container .information {
+  padding: 20px 0;
+  box-shadow: 0 5px 5px -4px #121432;
+  background-color: rgba(186, 186, 186, 0.2);
+}
+.main-container .phones {
+  display: flex;
+}
+.main-container .phone {
+  margin-left: 5px;
+}
+.main-container .phone:last-child {
+  margin-bottom: 0;
+}
+.main-container .phone:nth-child(1) {
+  /*margin: 0 0 10px;*/
+  margin-top: 0;
+  /*background-color: #F8B849;*/
+}
+.main-container .position {
+  margin-left: 40px;
+  font-size: 110%;
+}
+.main-container .position span {
+  font-weight: 600;
+}
+.main-container .self-text {
+  margin-left: 70px;
+}
 
 /*# sourceMappingURL=App.css.map */

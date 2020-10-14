@@ -3,9 +3,7 @@ import FontIcon from "./FontIcon";
 
 class WorkCard extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
+
 
     render() {
         return (
@@ -13,9 +11,9 @@ class WorkCard extends React.Component {
 
                 <div className="img-wrapper">
                     <div className="links">
-                        <a className="visit-link" target="_blank" href={this.props.visit}>View</a>
+                        <a className="visit-link" target="_blank" rel="noopener noreferrer" href={this.props.visit}>View</a>
                         {/*todo rename Alivio folder*/}
-                        <a className="visit-link" target="_blank" href={this.props.git}>Git</a>
+                        <a className="visit-link" target="_blank" rel="noopener noreferrer" href={this.props.git}>Git</a>
                     </div>
                     <img src={this.props.img} alt="work" class="card-img"/>
                 </div>
