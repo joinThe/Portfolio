@@ -161,6 +161,7 @@ html {
   color: white;
   text-shadow: #424242 1px 1px;
 }
+
 .main-container {
   font-family: sans-serif;
   padding-bottom: 30px;
@@ -216,4 +217,38 @@ html {
   margin-left: 70px;
 }
 
-/*# sourceMappingURL=App.css.map */
+.phones {
+  font-size: 1.6rem;
+  display: flex;
+  margin: 30px 0;
+}
+.phones .phone {
+  margin-left: 5px;
+}
+.phones .phone:nth-child(1) {
+  /*margin: 0 0 10px;*/
+  margin-top: 0;
+  /*background-color: #F8B849;*/
+}
+.phones .phone:last-child {
+  margin-bottom: 0;
+}
+
+.text-for-me {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.text-for-me .title {
+  font-size: 1.8rem;
+  margin: 5px;
+}
+.text-for-me .area {
+  width: 50rem;
+}
+.text-for-me .link-and-button {
+  width: max-content;
+  margin-top: 10px;
+  align-self: center;
+}
